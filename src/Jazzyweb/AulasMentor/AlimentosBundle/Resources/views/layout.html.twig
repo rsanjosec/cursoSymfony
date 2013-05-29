@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+{% block title %} Bienvenido a la aplicación de alimentos {% block titulosecundario %}{% endblock %} {% endblock %}
+{% block stylesheets %}
+ <link href="{{ asset('bundles/jazzywebaulasmentoralimentos/css/estilos.css') }}"  type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+<div id="cabecera">
+  <h1>Información de alimentos</h1>
+</div>
+
+<div id="menu">
+<hr/>
+  <a href="{{ path('JAMAB_homepage')}}">inicio</a> |
+  <a href="{{ path('JAMAB_homepage')}}">ver alimentos</a> |
+  <a href="{{ path('JAMAB_homepage')}}">insertar alimento</a> |
+  <a href="{{ path('JAMAB_homepage')}}">buscar por nombre</a> |
+  <a href="{{ path('JAMAB_homepage')}}">buscar por energia</a> |
+  <a href="{{ path('JAMAB_homepage')}}">búsqueda combinada</a>
+<hr/>
+</div>
+
+<div id="contenido">
+{% block contenido %}
+
+{% endblock %}
+</div>
+
+<div id="pie">
+    <hr/>
+    <div align="center">- pie de página -</div>
+</div>
+
+{% endblock %}

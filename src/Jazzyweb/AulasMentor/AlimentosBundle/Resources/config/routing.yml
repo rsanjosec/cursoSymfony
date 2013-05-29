@@ -1,3 +1,3 @@
-JazzywebAulasMentorAlimentosBundle_homepage:
-    pattern:  /hello/{name}
+JAMAB_homepage:
+    pattern:  /
     defaults: { _controller: JazzywebAulasMentorAlimentosBundle:Default:index }
