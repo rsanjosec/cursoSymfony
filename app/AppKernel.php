@@ -17,14 +17,16 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
-            new Jazzyweb\AulasMentor\AlimentosBundle\JazzywebAulasMentorAlimentosBundle(),
+            //new Jazzyweb\AulasMentor\AlimentosBundle\JazzywebAulasMentorAlimentosBundle(),
+            new Casa\FinanzasBundle\FinanzasBundle(),
         );
 
-        if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+        if (in_array($this->getEnvironment(), array('dev','devDos','pru','test'))) {
             $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            $bundles[] = new Jazzyweb\AulasMentor\AlimentosBundle\JazzywebAulasMentorAlimentosBundle();
         }
 
         return $bundles;

@@ -1,3 +1,7 @@
+FinanzasBundle:
+    resource: "@FinanzasBundle/Resources/config/routing.yml"
+    prefix:   /finanzas
+
 JazzywebAulasMentorAlimentosBundle:
     resource: "@JazzywebAulasMentorAlimentosBundle/Resources/config/routing.yml"
     prefix:   /alimentos

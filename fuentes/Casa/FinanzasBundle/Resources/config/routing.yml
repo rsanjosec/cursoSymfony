@@ -1,0 +1,3 @@
+FinanzasBundle_homepage:
+    pattern:  /
+    defaults: { _controller: FinanzasBundle:Default:index }
